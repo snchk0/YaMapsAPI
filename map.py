@@ -37,6 +37,9 @@ spn[0] -= 0.01
 spn = list(map(float, ll.split(',')))
 spn[0] += 0.01
 
+spn = ','.join(list(map(str, spn)))
+ll = ','.join(list(map(str, ll)))
+
 #обновить картинку
 response = requests.get(url, params=params)
 
